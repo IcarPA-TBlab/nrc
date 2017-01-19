@@ -1,0 +1,27 @@
+####### PARAMETRI DI APPRENDIMENTO
+learning_rate : 0.05    # parametro di apprendimento
+
+n_epochs : 100          # numero di epoche
+
+####### PARAMETRI DELLA IMMAGINE DI INGRESSO
+batch_size : 10         # dimensione del mini batch
+
+n_channels : 1          # numero di canali della immagine di input
+
+n_kerns : [10, 20]      # numero di kernel nel primo strato e nel secondo
+
+###### PARAMETRI PRIMO STADIO
+dimKernel0 : [1, 5]     # dimensione del kernel del primo stadi
+
+poolSize0 : [1,2]       # dimensione del pool del primo stadio
+
+###### PARAMETRI SECONDO STADIO
+dimKernel1 : [1, 5]     # dimensione del kernel del secondo stadio
+
+poolSize1 : [1, 2]      # dimensione del pool del secondo stadio
+
+###### PARAMETRI ULTIMO STADIO DELLA RETE
+out2Shape : 500         # numero di unita' nascoste del mlp di uscita
+
+###### USCITA DELLA RETE
+out3shape : 13
