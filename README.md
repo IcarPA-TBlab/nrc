@@ -9,3 +9,6 @@
 * ViennaRNA (1.8.5)
 * Ipknot (0.0.2)
 * GLPK	(4.60)
+
+#### nRC tool docker image:
+https://hub.docker.com/r/tblab/nrc/
