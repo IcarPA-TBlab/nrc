@@ -46,7 +46,7 @@ Note that each sequence in fasta format should have the following header:
 ```console
 >seq_ID class_name
 ```
-wher _seq_ID_ and _class_name_ labels must be without ".","\", or any special characters, e.g.:
+wher _seq_ID_ and _class_name_ labels must be without ".","\","/" or any special character, e.g.:
 ```console
 >RF00005_AAFR03000905_1_148681-148750 tRNA
 AGCAGTGTGGCATAGTGGAAAGTGTTGGATTTGTAGTTAAAGGACTTGGGTTCAGATCCC
