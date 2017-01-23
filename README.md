@@ -11,11 +11,13 @@ A tool for classification of ncRNA sequences based on structural features extrac
 * Ipknot (0.0.2)
 * GLPK	(4.60)
 
-#### nRC tool docker image:
+### nRC tool docker image:
 https://hub.docker.com/r/tblab/nrc/
 
 
 ### How to Use
+The best way to use nRC tool is to create a container from the docker image above. 
+Anyway, it is possible to download source code and execute the following steps.
 
 #### nRC Training process
 ##### Step 1: training feature model
