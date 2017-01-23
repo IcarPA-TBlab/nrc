@@ -1,27 +1,29 @@
-####### PARAMETRI DI APPRENDIMENTO
-learning_rate : 0.05    # parametro di apprendimento
-
-n_epochs : 100          # numero di epoche
-
-####### PARAMETRI DELLA IMMAGINE DI INGRESSO
-batch_size : 10         # dimensione del mini batch
-
-n_channels : 1          # numero di canali della immagine di input
-
-n_kerns : [10, 20]      # numero di kernel nel primo strato e nel secondo
-
-###### PARAMETRI PRIMO STADIO
-dimKernel0 : [1, 5]     # dimensione del kernel del primo stadi
-
-poolSize0 : [1,2]       # dimensione del pool del primo stadio
-
-###### PARAMETRI SECONDO STADIO
-dimKernel1 : [1, 5]     # dimensione del kernel del secondo stadio
-
-poolSize1 : [1, 2]      # dimensione del pool del secondo stadio
-
-###### PARAMETRI ULTIMO STADIO DELLA RETE
-out2Shape : 500         # numero di unita' nascoste del mlp di uscita
-
-###### USCITA DELLA RETE
-out3shape : 13
+#######  CNN PARAMETERS  #######
+###
+####### LEARNING
+learning_rate : 0.05    # learning parameter
+
+n_epochs : 100          # number of epochs
+
+####### INPUT LEARNING
+batch_size : 10         # mini-batch dimension
+
+n_channels : 1          # number of input channels
+
+n_kerns : [10, 20]      # number of kernels for both convolutional layers
+
+###### FIRST CONVOLUTIONAL LAYER 
+dimKernel0 : [1, 5]     # kernel dimension
+
+poolSize0 : [1,2]         # pool size
+
+###### SECOND CONVOLUTIONAL LAYER 
+dimKernel1 : [1, 5]     # kernel dimension
+
+poolSize1 : [1, 2]         # pool size
+
+###### MLP LAYER
+out2Shape : 500         # number of hidden units
+
+###### OUTPUT
+out3shape : 4           # number of output neurons (it should be greater than or equal to  the number of training classes)
