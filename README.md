@@ -40,6 +40,19 @@ nrc_testing_feature_model.sh -d <nRNA_testing_file>.fasta  -f <experiment_name>_
 ```console
 nrc_testing_network_model.sh -d <sequence_output_name> -p <parameters> -m <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.pkl -o <classification_output_name>
 ```
+
+#### Fasta file format
+Note that each sequence in fasta format should have the following header:
+```console
+>seq_ID class_name
+```
+wher _seq_ID_ and _class_name_ labels must be without ".","\", or any special characters, e.g.:
+```console
+>RF00005_AAFR03000905_1_148681-148750 tRNA
+AGCAGTGTGGCATAGTGGAAAGTGTTGGATTTGTAGTTAAAGGACTTGGGTTCAGATCCC
+TGCTCTGTTA
+```
+
 ###
 ### Datasets
 This distribution contains two datasets. Both of them are available in "__data__" folder. 
