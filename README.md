@@ -13,3 +13,27 @@ A tool for classification of ncRNA sequences based on structural features extrac
 
 #### nRC tool docker image:
 https://hub.docker.com/r/tblab/nrc/
+
+### How to Use
+
+#### nRC Training process
+##### Step 1: training feature model
+```console
+docker exec -it <my_container_name> /root/nrc_workspace/nrc_training_feature_model.sh -d <nRNA_training_file>.fasta -o <experiment_name> -n <graph_feature_max_size> -m <graph_feature_min_size>
+```
+##### Step 2: traning CNN (create classification model)
+```console
+docker exec -it <my_container_name> /root/nrc_workspace/nrc_training_network_model.sh -d <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.txt -p <parameters>
+```
+
+#### .  
+#### nRC Testing process
+
+##### Step 3: testing feature model
+```console
+docker exec -it <my_container_name> /root/nrc_workspace/nrc_testing_feature_model.sh -d <nRNA_testing_file>.fasta  -f <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.nel -o <sequence_output_name>
+```
+##### Step 4: testing CNN (test classification model)
+```console
+docker exec -it <my_container_name> /root/nrc_workspace/nrc_testing_network_model.sh -d <sequence_output_name> -p <parameters> -m <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.pkl -o <classification_output_name>
+```
