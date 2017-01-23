@@ -40,3 +40,9 @@ nrc_testing_feature_model.sh -d <nRNA_testing_file>.fasta  -f <experiment_name>_
 ```console
 nrc_testing_network_model.sh -d <sequence_output_name> -p <parameters> -m <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.pkl -o <classification_output_name>
 ```
+###
+### Datasets
+This distribution contains two datasets. Both of them are in "data" folder. 
+The "sample" datases is a small dataset with 40 ncRNA fasta sequences for training and 20 ncRNA fasta sequences for testing.
+The "ECCB2017" dataset has been used for experiments in the manuscript submitted at ECCB2017 conference. It is composed by a training file with 6320 ncRNA fasta sequences (belonging to 13 ncRNA classes) and two validated file with respectively 2600 fasta sequences (13 classes) and 2400 ncRNA fasta sequences (12 classes). All of them are extracted from Rfam database. 
+nRC trained models used in manuscript submitted at ECCB2017 conference are available at http://tblab.pa.icar.cnr.it/public/nRC/ECCB2017_dataset/
