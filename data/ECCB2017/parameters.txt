@@ -1,0 +1,31 @@
+#######  CNN PARAMETERS  #######
+###
+####### CNN LEARNING
+learning_rate : 0.05    # learning rate
+
+n_epochs : 100          # number of epochs
+
+####### CNN INPUT IMAGE
+batch_size : 10         # mini-batch size
+
+n_channels : 1          # number of channels
+
+ishape : [1, 6443]      # data input shape
+
+n_kerns : [10, 20]      # number of kernels for both convolutional layers
+
+###### CNN FIRST LAYER
+dimKernel0 : [1, 5]     # kernel dimension
+
+poolSize0 : [1,2]       # pool size
+
+###### CNN SECOND LAYER
+dimKernel1 : [1, 5]     # kernel dimension
+
+poolSize1 : [1, 2]      # pool size
+
+###### CNN MLP 
+out2Shape : 500         # number of hidden units
+
+###### CNN OUTPUT
+out3shape : 13          # number of output neurons (it should be greater than or equal to  the number of training classes)
