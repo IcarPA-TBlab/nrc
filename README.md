@@ -43,6 +43,6 @@ nrc_testing_network_model.sh -d <sequence_output_name> -p <parameters> -m <exper
 ###
 ### Datasets
 This distribution contains two datasets. Both of them are available in "__data__" folder. 
-* The "__sample__" datases is a small dataset with 40 ncRNA fasta sequences for training and 20 ncRNA fasta sequences for testing.
+* The "__sample__" datases is a small dataset with 40 ncRNA fasta sequences (belonging to 4 ncRNA classes) for training and 20 ncRNA fasta sequences for testing.
 * The "__ECCB2017__" dataset has been used for experiments in the manuscript submitted at ECCB2017 conference. It is composed by a training file with 6320 ncRNA fasta sequences (belonging to 13 ncRNA classes) and two validated file with respectively 2600 fasta sequences (13 classes) and 2400 ncRNA fasta sequences (12 classes). All of them are extracted from Rfam database. 
 nRC trained models used in the manuscript submitted at ECCB2017 conference are available at http://tblab.pa.icar.cnr.it/public/nRC/ECCB2017_dataset/
