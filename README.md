@@ -17,7 +17,7 @@ https://hub.docker.com/r/tblab/nrc/
 
 ### How to Use
 The best way to use nRC tool is to create a container from the docker image above. 
-Anyway, it is possible to download source code and execute the following steps.
+Anyway, it is possible to download source code, install all dependences and execute the following steps.
 
 #### nRC Training process
 ##### Step 1: training feature model
