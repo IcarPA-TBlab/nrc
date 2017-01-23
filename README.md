@@ -27,7 +27,7 @@ nrc_training_feature_model.sh -d <nRNA_training_file>.fasta -o <experiment_name>
 nrc_training_network_model.sh -d <experiment_name>_<graph_feature_max_size>_<graph_feature_min_size>.txt -p <parameters>
 ```
 
-#### .  
+####   
 #### nRC Testing process
 
 ##### Step 3: testing feature model
