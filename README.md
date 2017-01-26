@@ -9,6 +9,7 @@ A tool for classification of ncRNA sequences based on structural features extrac
 * Java JDK  (1.8.0)
 * ViennaRNA (1.8.5)
 * Ipknot (0.0.2)
+* MoSS  (2.13)
 * GLPK	(4.60)
 
 ### nRC tool docker image:
