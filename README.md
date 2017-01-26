@@ -1,4 +1,4 @@
-### nRC: non-coding RNA Classification Tool
+### nRC: non-coding RNA Classifier
 A tool for classification of ncRNA sequences based on structural features extracted from RNA secondary structure and a deep learning architecture implementing a convolutional neural network.
 
 #### Dependences:
